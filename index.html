@@ -1,12 +1,58 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="./app.js"defer></script>
-   <title>Document</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Title Case — So'z bosh harfini katta qilish</title>
+   <link rel="stylesheet" href="./stayle.css">
+   <script src="./qushimch.js"defer></script>
 </head>
+
 <body>
-   
+   <div class="wrap">
+      <header>
+         <div class="logo">TC</div>
+         <div>
+            <h1>So'z bosh harfini katta qiluvchi moslama</h1>
+            <p class="lead">Matn kiriting, har bir so'zning bosh harfi katta bo'lib chiqadi. (O'zbekcha apostrof va
+               belgilarni hisobga oladi)</p>
+         </div>
+      </header>
+
+      <div class="card">
+         <div class="grid">
+            <div>
+               <label for="input">Matn kiriting</label>
+               <textarea id="input" placeholder="Masalan: O'zbEkiston BuYuk davlaT"></textarea>
+
+               <div class="controls">
+                  <button id="convert" class="btn primary">Katta harflarga o'gir</button>
+                  <button id="clear" class="btn">Tozalash</button>
+                  <button id="copy" class="btn">Natijani nusxalash</button>
+               </div>
+
+               <p class="meta">Qanday ishlaydi: dastlab <code>toLowerCase()</code> orqali hamma kichik harfga olinadi,
+                  keyin har bir so'zning birinchi harfi (birinchi lotin/Unicode harf) katta qilinadi, apostroflar va
+                  belgilarga tegmaydi.</p>
+            </div>
+
+            <div>
+               <label>Natija (preview)</label>
+               <div id="preview" class="preview" aria-live="polite"></div>
+
+               <p class="small">Maslahatlarga ehtiyoj bo'lsa, o'ngdagi maydonda tahrir qilib qayta ishlating.</p>
+
+            </div>
+         </div>
+
+         <footer>
+            <span>Yordam: Sizning matningiz har doim to'g'ri bosh harf bilan qaytadi. Agar qo'shimcha funksiya (masalan,
+               faqat ismlar ro'yxati, hyphen bilan yoki punktuatsiyani saqlash) kerak bo'lsa — so'rang.</span>
+         </footer>
+      </div>
+   </div>
+
+
 </body>
+
 </html>
