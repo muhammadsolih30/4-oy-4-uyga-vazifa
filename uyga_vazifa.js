@@ -57,17 +57,35 @@
 
 
 
-let son = `ali`;
-let natija = ' '
+// let son = `ali`;
+// let natija = ' '
 
-for (let i = son.length - 1; i >= 0; i--) {
-  natija += son[i] ;
+// for (let i = son.length - 1; i >= 0; i--) {
+//   natija += son[i] ;
+// }
+
+// console.log(natija);
+
+
+//! 6-masala
+
+
+function getStringStars(str, N) {
+  if (typeof str !== 'string') {
+    throw new Error("Birinchi argument satr bo‘lishi kerak");
+  }
+  if (!Number.isInteger(N) || N < 0) {
+    throw new Error("Ikkinchi argument musbat butun son bo‘lishi kerak");
+  }
+
+  if (str.length <= 1 || N === 0) {
+    return str;
+  }
+
+  const stars = '*'.repeat(N);
+  return str.split('').join(stars);
 }
 
-console.log(natija);
-
-
-
-
-
+console.log(getStringStars("salom", 6)); 
+ 
 
