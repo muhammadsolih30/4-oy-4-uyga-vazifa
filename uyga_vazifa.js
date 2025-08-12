@@ -53,10 +53,18 @@
 
 
 
-
 //! 5-masala
 
 
+
+let son = `ali`;
+let natija = ' '
+
+for (let i = son.length - 1; i >= 0; i--) {
+  natija += son[i] ;
+}
+
+console.log(natija);
 
 
 
