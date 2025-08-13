@@ -70,22 +70,58 @@
 //! 6-masala
 
 
-function getStringStars(str, N) {
-  if (typeof str !== 'string') {
-    throw new Error("Birinchi argument satr bo‘lishi kerak");
-  }
-  if (!Number.isInteger(N) || N < 0) {
-    throw new Error("Ikkinchi argument musbat butun son bo‘lishi kerak");
-  }
+// function getStringStars(str, N) {
+//   if (typeof str !== 'string') {
+//     throw new Error("Birinchi argument satr bo‘lishi kerak");
+//   }
+//   if (!Number.isInteger(N) || N < 0) {
+//     throw new Error("Ikkinchi argument musbat butun son bo‘lishi kerak");
+//   }
 
-  if (str.length <= 1 || N === 0) {
-    return str;
-  }
+//   if (str.length <= 1 || N === 0) {
+//     return str;
+//   }
 
-  const stars = '*'.repeat(N);
-  return str.split('').join(stars);
-}
+//   const stars = '*'.repeat(N);
+//   return str.split('').join(stars);
+// }
 
-console.log(getStringStars("salom", 6)); 
+// console.log(getStringStars("salom", 6)); 
  
 
+
+//! 7-masala
+
+// let str = "5a10b";
+
+// for( son of str){
+//   if(""){}
+
+//   else{
+//     son++
+//     if(!isNaN(son)){
+//       console.log(son - 1)
+//     }
+//     else if (son == NaN){
+//     console.log("aliqlanmadi",son)
+//     }
+//   }
+// }
+
+
+//! 8-masala
+
+
+// let ali = `vali`
+// let hsobla = 0
+
+// for (let i of ali){
+ 
+//   if(i <= 'a' && i >= 'z' ){
+//     hsobla++
+//   }
+
+//   else if((i >= 'a' || 'a' <= 'я') || i === 'ё' ){
+//     hsobla++
+//   }
+// }    console.log(hsobla)
