@@ -1,4 +1,3 @@
-
 //! 1-masala
 
 // let n = 90;
@@ -14,8 +13,6 @@
 //    console.log(`siz 64 dan katta va 91 dan kichik bulgan son kirita olasiz`);
 // }
 
-
-
 //! 2-masala
 
 // let n = `??:::`;
@@ -23,11 +20,10 @@
 // if(!isNaN(Number(n))){
 //    console.log("digit")
 // }else if ((n >= 'A' && n <= 'Z') || (n >= 'a' && n <= 'z')) {
-//       console.log('lotin'); 
+//       console.log('lotin');
 // }else{
 //    console.log('0');
 // }
-
 
 //! 3-masala
 
@@ -36,26 +32,18 @@
 // console.log(sas.charCodeAt(0));
 // console.log(sas.charCodeAt(sas.length -1))
 
-
 //! 4-masala
-
-
 
 // let n = 5;
 // let belgi = 'A ';
 // let a = ''
-
 
 // for (let i = 0; i < n; i++) {
 //    a += belgi
 // }
 // console.log(`${a}`);
 
-
-
 //! 5-masala
-
-
 
 // let son = `ali`;
 // let natija = ' '
@@ -66,9 +54,7 @@
 
 // console.log(natija);
 
-
 //! 6-masala
-
 
 // function getStringStars(str, N) {
 //   if (typeof str !== 'string') {
@@ -86,9 +72,7 @@
 //   return str.split('').join(stars);
 // }
 
-// console.log(getStringStars("salom", 6)); 
- 
-
+// console.log(getStringStars("salom", 6));
 
 //! 7-masala
 
@@ -108,15 +92,13 @@
 //   }
 // }
 
-
 //! 8-masala
-
 
 // let ali = `vali`
 // let hsobla = 0
 
 // for (let i of ali){
- 
+
 //   if(i <= 'a' && i >= 'z' ){
 //     hsobla++
 //   }
@@ -125,3 +107,35 @@
 //     hsobla++
 //   }
 // }    console.log(hsobla)
+
+//! 9-masala
+
+// let satr = `uavHDBGDJGFxB`
+// console.log(satr.toLowerCase())
+
+//! 10-masala
+
+function son(satr) {
+  let yigindi = "";
+  for (let a of satr) {
+    if (`A` <= a && a >= "Z") {
+      a = a.toUpperCase();
+      yigindi += a;
+    } else if (a <= `a` || a >= `z`) {
+      a = a.toLowerCase();
+      yigindi += a;
+    } else {
+      console.log(`aniqlanmaadi`);
+    }
+  }
+  return yigindi;
+}
+
+let natija = son(`ALIvali`);
+
+console.log(natija);
+
+
+
+
+

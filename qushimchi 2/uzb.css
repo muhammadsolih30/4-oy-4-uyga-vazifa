@@ -140,7 +140,6 @@ a {
    box-shadow: 0 0 0 4px #cbd5ff22
 }
 
-/* HERO */
 .hero {
    position: relative;
    padding: 70px 0 40px;
@@ -259,7 +258,7 @@ a {
 .card {
    position: relative;
    border-radius: var(--radius);
-   overflow: hidden;
+   overflow: auto;
    border: 1px solid #ffffff14;
    background: linear-gradient(180deg, #0f1118, #0b0c12)
 }
